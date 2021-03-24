@@ -1,0 +1,73 @@
+body {
+    font-family: 'Cardo', serif!important;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+
+   h2 {
+       text-align: right;
+   }
+
+h1 {
+    font-size: 10em!important;
+    text-align: center;
+    
+}
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "full-block full-block"
+    "half-block-0 half-block-1"
+    "half-block-2 half-block-3";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  
+  .full-block {
+    grid-area: full-block;
+  }
+  .half-block-0 {
+    grid-area: half-block-0;
+  }
+  .half-block-1 {
+    grid-area: half-block-1;
+  }
+  .half-block-2 {
+    grid-area: half-block-2;
+  }
+  .half-block-3 {
+    grid-area: half-block-3;
+    
+  }
+
+  .half-block-2, .half-block-0 {
+    border-top: 5px solid black;
+    padding-top: 50px;
+    height: 400px;
+  }
+
+
+  
+  
+  .full-block {
+    height: 40vh;
+    padding: 10px;
+    background-image: url('img/sugimoto.jpg');
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.accordion-body a {
+  color: darkred !important;
+  text-decoration: none!important;
+}
+
+.accordion-body a:hover {
+  background-color: #ccc;
+  
+}
